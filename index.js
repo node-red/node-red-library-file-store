@@ -10,11 +10,10 @@ module.exports = function(RED) {
             this.label = config.label;
             this.path = config.path;
             if (!this.path) {
-                throw new Error("Missing path");
+                throw RED._("runtime:library.invalidProperty",{prop:"path",value:this.path});
             }
         }
         async init() {
-            throw new Error("BANG")
             return fs.ensureDir(this.path);
         }
         async getEntry(type,path) {

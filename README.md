@@ -39,7 +39,7 @@ Node-RED node module.
                     type: "node-red-library-file-store",
                     path: "/Users/tom/work/team-library/",
                     label: "Team collaboration",
-                    icon: "fontawesome/fa-users"
+                    icon: "font-awesome/fa-users"
                 }
             ]
         },
@@ -56,3 +56,5 @@ Property | Description
 `path`   | **Required** <br> The absolute path to the where the library should be stored
 `label`  | An optional label to use in the editor, otherwise the `id` will be used.
 `icon`   | An optional icon from [FontAwesome 4.7](https://fontawesome.com/v4.7.0/icons/).
+`types`  | By default the library will be used to store all types of object. It can be restricted to certain types by setting this property to an array of the acceptable types. For example, to restrict it to just flows, set this property to `["flows"]`.
+`readOnly` | To make this a read-only library, so it can only be used to import from, set this property to `false`.
