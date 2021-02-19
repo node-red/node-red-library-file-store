@@ -19,7 +19,7 @@ shared library to store reusable flows and components.
 This module should be installed under `~/.node-red/` as you would any other
 Node-RED node module.
 
-   npm install @node-red/library-file-store
+    npm install @node-red/library-file-store
 
 
 ### Configuration
